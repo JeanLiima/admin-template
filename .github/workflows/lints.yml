@@ -1,0 +1,42 @@
+name: Lints
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  checks: write
+  contents: write
+
+jobs:
+  run-linters:
+    name: Run linters
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out Git repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 16
+
+      - name: Install Node.js dependencies
+        run: npm i
+
+      - name: Run linter to code
+        uses: wearerequired/lint-action@v2.1.0
+        with:
+          eslint: true
+          eslint_extensions: 'js,jsx,ts,tsx'
+          eslint_auto_fix: true
+          eslint_args: ./src/
+          stylelint: true
+          stylelint_extensions: 'scss'
+          stylelint_auto_fix: true
+          continue_on_error: false
