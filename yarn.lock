@@ -293,10 +293,10 @@ acorn-jsx@^5.3.2:
   resolved "https://registry.npmjs.org/acorn/-/acorn-8.8.1.tgz"
   integrity sha512-7zFpHzhnqYKrkYdUjF1HI1bzd0VygEGX8lFk4k5zVMqHEoES+P+7TKI+EvLO9WVMJ8eekdO0aDEK044xTXwPPA==
 
-adapt-it-library@^0.0.6:
-  version "0.0.6"
-  resolved "https://registry.npmjs.org/adapt-it-library/-/adapt-it-library-0.0.6.tgz"
-  integrity sha512-HbMhX+HYIYSNA50HfpL9elGgU+AKJyTpJVng4bqHAvfU4lA0ofYkN+6G5L58p4l50r75uBquvTDIPvhroN002w==
+adapt-it-library@^0.0.10:
+  version "0.0.10"
+  resolved "https://registry.npmjs.org/adapt-it-library/-/adapt-it-library-0.0.10.tgz"
+  integrity sha512-RmZ20L6Z4NozVEl+1K/SWyOK/kcL1vvTDJLUVKhF6KFEGP96mpPkPvqQw+wnp+x5zqWtRFxpXIloetUupluH8w==
   dependencies:
     react "^18.2.0"
     react-dom "^18.2.0"
