@@ -4,7 +4,7 @@
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	font-family: 'Montserrat', sans-serif;
+	font-family: Montserrat, sans-serif;
 	height: 100vh;
 	margin: -20px 0 50px;
 
@@ -27,7 +27,7 @@
 
 	form > h1,
 	form > span {
-		color: $main-font-light-color; 
+		color: $main-font-light-color;
 	}
 
 	a {
@@ -46,9 +46,9 @@
 
 		form > h1,
 		form > span {
-			color: $main-font-dark-color; 
+			color: $main-font-dark-color;
 		}
-	
+
 		a {
 			color: $main-font-dark-color;
 		}

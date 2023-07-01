@@ -1,20 +1,19 @@
-
 // Brand colors
-$color-brand-dark: #FF416C;
-$color-brand-medium: #FD8687;
-$color-brand-light: #F3C5C5;
+$color-brand-dark: #ff416c;
+$color-brand-medium: #fd8687;
+$color-brand-light: #f3c5c5;
 
 // Font colors
 $color-neutral-700: #474747;
-$color-neutral-450: #8C8C8C;
-$color-neutral-100: #E8E8E8;
-$color-neutral-50: #F3F3F3;
-$color-neutral-0: #FFFFFF;
+$color-neutral-450: #8c8c8c;
+$color-neutral-100: #e8e8e8;
+$color-neutral-50: #f3f3f3;
+$color-neutral-0: #fff;
 
 // Box shadows
-$shadow-level-1: 0px 4px 8px rgba(24, 24, 24, 0.08);
-$shadow-level-2: 0px 8px 16px rgba(24, 24, 24, 0.08);
-$shadow-level-3: 0px 16px 24px rgba(24, 24, 24, 0.08);
+$shadow-level-1: 0 4px 8px rgb(24 24 24 / 8%);
+$shadow-level-2: 0 8px 16px rgb(24 24 24 / 8%);
+$shadow-level-3: 0 16px 24px rgb(24 24 24 / 8%);
 
 // Spacing
 $spacing-4: 0.25rem;
