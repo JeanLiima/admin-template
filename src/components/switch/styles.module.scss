@@ -1,0 +1,50 @@
+.default-switch {
+	display: flex;
+	color: $main-font-light-color;
+	align-items: center;
+	gap: $spacing-8;
+
+	@media (prefers-color-scheme: dark) {
+		color: $main-font-dark-color;
+	} 
+
+	&__label {
+		font-size: 14px;
+		line-height: 1;
+	}
+	
+	&__root {
+		width: 36px;
+		height: 20px;
+		border-radius: 9999px;
+		position: relative;
+		box-shadow: $shadow-level-1;
+		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+		border: none;
+		background-color: $color-neutral-100;
+		
+		&:focus {
+			box-shadow: $shadow-level-1;
+		}
+		
+		&[data-state="checked"] {
+			background-color: $color-brand-medium;
+		}
+		
+		&__thumb {
+			display: block;
+			width: 16px;
+			height: 16px;
+			background-color: $color-neutral-0;
+			border-radius: 9999px;
+			box-shadow: $shadow-level-3;
+			transition: transform 100ms;
+			transform: translateX(-4px);
+			will-change: transform;
+
+			&[data-state="checked"] {
+				transform: translateX(12px);
+			}
+		}
+	}
+}

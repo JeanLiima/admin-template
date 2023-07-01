@@ -1,0 +1,25 @@
+.button {
+	border-radius: 20px;
+	border: 1px solid $color-brand-dark;
+	background-color: $color-brand-dark;
+	color: $color-neutral-0;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+
+	&:active {
+		transform: scale(0.95);
+	}
+
+	&:focus {
+		outline: none;
+	}
+
+	&[data-type="outline"] {
+		background-color: transparent;
+		border-color: $color-neutral-0;
+	}
+}

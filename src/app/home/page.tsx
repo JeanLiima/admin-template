@@ -1,23 +1,19 @@
 "use client";
 
-import { useRouter } from "next/navigation";
-import { useEffect } from "react";
+import { redirect } from "next/navigation";
 import { Navbar } from "adapt-it-library";
 
 import styles from "./styles.module.scss";
 
 const Home: React.FC = () => {
-	const { push } = useRouter();
-	useEffect(() => { document.body.classList.add(styles["body-container"]); }, []);
-
 	const handleOnClick = () => {
-		// console.log("clicado");
+		console.log("clicado");
 	};
 
 	const navOptions = [
 		{
 			label: "Home",
-			onClick: () => push("/tasks"),
+			onClick: () => redirect("/tasks"),
 		},
 		{
 			label: "Products",

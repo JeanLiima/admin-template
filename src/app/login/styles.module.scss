@@ -1,0 +1,56 @@
+.main {
+	background: $main-bg-light-color;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Montserrat', sans-serif;
+	height: 100vh;
+	margin: -20px 0 50px;
+
+	h1 {
+		font-weight: bold;
+		margin: 0;
+	}
+
+	p {
+		font-size: 14px;
+		font-weight: 100;
+		line-height: 20px;
+		letter-spacing: 0.5px;
+		margin: 20px 0 30px;
+	}
+
+	span {
+		font-size: 12px;
+	}
+
+	form > h1,
+	form > span {
+		color: $main-font-light-color; 
+	}
+
+	a {
+		color: $main-font-light-color;
+		font-size: 14px;
+		text-decoration: none;
+		margin: 15px 0;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	@media (prefers-color-scheme: dark) {
+		background: $main-bg-dark-color;
+
+		form > h1,
+		form > span {
+			color: $main-font-dark-color; 
+		}
+	
+		a {
+			color: $main-font-dark-color;
+		}
+	}
+}
