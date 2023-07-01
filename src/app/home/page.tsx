@@ -7,7 +7,7 @@ import styles from "./styles.module.scss";
 
 const Home: React.FC = () => {
 	const handleOnClick = () => {
-		console.log("clicado");
+		// console.log("clicado");
 	};
 
 	const navOptions = [
